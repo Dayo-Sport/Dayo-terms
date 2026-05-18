@@ -968,16 +968,22 @@
           </li>
           <li>
             <a href="#section-14" class="toc-link"
-              >14. Minors (13–17) & Parental Controls</a
+              >14. Security Measures & Data Protection</a
             >
           </li>
           <li>
-            <a href="#section-15" class="toc-link"
-              >15. Security Measures & Data Protection</a
+            <a
+              href="javascript:void(0);"
+              class="toc-link"
+              onclick="
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  behavior: 'smooth',
+                })
+              "
             >
-          </li>
-          <li>
-            <a href="#section-16" class="toc-link">16. Contact & Support</a>
+              15. Contact & Support
+            </a>
           </li>
         </ul>
         <a href="index.html" class="toc-back"
@@ -1135,11 +1141,11 @@
         <h4>2.2.1 Third-Party Platforms</h4>
         <p>
           This includes services provided by third-party platforms such as
-          Google (including Google Play Store, Google Sign-In, Google Play
-          Billing, and Firebase), Facebook (including Facebook Login and SDK
-          integrations), and Supabase (including database, authentication, and
-          storage services). Dayo does not control or assume responsibility for
-          how these providers process personal data.
+          Google (including Google Play Store, Google Sign-In, and Firebase),
+          Facebook (including Facebook Login and SDK integrations), and Supabase
+          (including database, authentication, and storage services). Dayo does
+          not control or assume responsibility for how these providers process
+          personal data.
         </p>
 
         <h4>2.2.2 External Links and Content</h4>
@@ -1151,12 +1157,11 @@
           may interact with or interpret such content.
         </p>
 
-        <h4>2.2.3 Third-Party Applications and Payments</h4>
+        <h4>2.2.3 Third-Party Applications</h4>
         <p>
-          Applications that integrate with Dayo and third-party payment
-          processors operate independently and are responsible for their own
-          compliance with data protection laws, including PCI-DSS standards for
-          payment security.
+          Applications that integrate with Dayo and third-party operate
+          independently and are responsible for their own compliance with data
+          protection laws.
         </p>
 
         <p>
@@ -1416,12 +1421,11 @@
           safer platform environment.
         </p>
 
-        <h4>3.3.4 Location and Transaction Security</h4>
+        <h4>3.3.4 Location Security</h4>
         <p>
           Special care is taken to protect sensitive data such as location
-          information used during matches and payment-related interactions,
-          ensuring that such data is handled securely and only for its intended
-          purpose.
+          information used during matches,ensuring that such data is handled
+          securely and only for its intended purpose.
         </p>
 
         <h4>3.3.5 User Control</h4>
@@ -1502,10 +1506,9 @@
           process data on behalf of Dayo under strict contractual instructions.
           In the Dayo ecosystem, processors include services such as Supabase
           for database storage and authentication, Google for analytics, maps,
-          and payment processing, and Facebook for login authentication. These
-          providers only process data as necessary to support Dayo’s
-          functionality and are not permitted to use your data for their own
-          independent purposes.
+          and Facebook for login authentication. These providers only process
+          data as necessary to support Dayo’s functionality and are not
+          permitted to use your data for their own independent purposes.
         </p>
 
         <h4>4.1.6 Consent</h4>
@@ -1779,57 +1782,8 @@
           platform.
         </p>
 
-        <!-- 5.4 -->
-        <h3>5.4 Data Collected During Payment</h3>
-
-        <p>
-          Payment-related data is processed through third-party payment
-          processors such as Google Play Billing. Dayo does not directly store
-          sensitive financial information such as credit card numbers or banking
-          credentials. Instead, we receive limited transaction metadata
-          necessary to confirm purchases, allocate virtual currency, and
-          maintain transaction records for accounting and dispute resolution
-          purposes.
-        </p>
-
-        <h4>Transaction Data</h4>
-
-        <table>
-          <tr>
-            <th>Data Point</th>
-            <th>Source</th>
-            <th>Visible to Dayo</th>
-            <th>Purpose</th>
-          </tr>
-          <tr>
-            <td>Transaction ID</td>
-            <td>Google Play</td>
-            <td>Yes</td>
-            <td>Verify purchase</td>
-          </tr>
-          <tr>
-            <td>Amount</td>
-            <td>Google Play</td>
-            <td>Yes</td>
-            <td>Coin allocation</td>
-          </tr>
-          <tr>
-            <td>Payment Method</td>
-            <td>Google Play</td>
-            <td>No</td>
-            <td>Not accessible to Dayo</td>
-          </tr>
-        </table>
-
-        <p>
-          Sensitive financial data remains fully encrypted and managed by Google
-          Play Billing systems. Dayo never has access to full payment
-          credentials, ensuring compliance with global payment security
-          standards such as PCI-DSS.
-        </p>
-
         <!-- 5.5 -->
-        <h3>5.5 Support & Communication Data</h3>
+        <h3>5.4 Support & Communication Data</h3>
 
         <p>
           When users contact customer support, we collect communication data
@@ -1848,7 +1802,7 @@
         </p>
 
         <!-- 5.6 -->
-        <h3>5.6 Automatically Collected Data</h3>
+        <h3>5.5 Automatically Collected Data</h3>
 
         <p>
           The Service automatically collects technical and usage data to ensure
@@ -1864,7 +1818,7 @@
         </p>
 
         <!-- 5.7 -->
-        <h3>5.7 Data from Third-Party Services</h3>
+        <h3>5.6 Data from Third-Party Services</h3>
 
         <p>
           When users choose to sign in using third-party services such as
@@ -1918,10 +1872,10 @@
         <p>
           Certain personal data is strictly required for us to provide the core
           functionalities of the Dayo platform. Without this data, we would not
-          be able to create accounts, facilitate matches, process transactions,
-          or enable communication between users. This processing is directly
-          tied to your agreement with Dayo when you accept our Terms of Service
-          and use the platform.
+          be able to create accounts, facilitate matches, or enable
+          communication between users. This processing is directly tied to your
+          agreement with Dayo when you accept our Terms of Service and use the
+          platform.
         </p>
 
         <p>
@@ -1980,12 +1934,6 @@
           </tr>
 
           <tr>
-            <td>Coin Transactions</td>
-            <td>Virtual economy, purchases, and balance tracking</td>
-            <td>Required for payment processing and validation</td>
-          </tr>
-
-          <tr>
             <td>Messages</td>
             <td>User-to-user communication within the app</td>
             <td>Required for messaging feature functionality</td>
@@ -2006,10 +1954,9 @@
           Certain categories of data must be processed and retained to comply
           with applicable laws and regulatory requirements in the Philippines
           and other jurisdictions where the Service operates. This includes
-          financial reporting obligations, cybersecurity requirements, and legal
-          enforcement support. Failure to retain such data could result in
-          non-compliance with statutory obligations imposed on digital service
-          providers.
+          cybersecurity requirements, and legal enforcement support. Failure to
+          retain such data could result in non-compliance with statutory
+          obligations imposed on digital service providers.
         </p>
 
         <table>
@@ -2018,12 +1965,6 @@
             <th>Legal Requirement</th>
             <th>Retention Period</th>
             <th>Purpose</th>
-          </tr>
-          <tr>
-            <td>Transaction History</td>
-            <td>Taxation (BIR compliance)</td>
-            <td>7 years</td>
-            <td>Financial reporting and audit compliance</td>
           </tr>
           <tr>
             <td>User Reports</td>
@@ -2047,7 +1988,7 @@
 
         <p>
           These legal obligations ensure that Dayo operates within regulatory
-          frameworks and maintains accountability in financial, security, and
+          frameworks and maintains accountability in security, and
           safety-related matters. Retention periods are strictly limited to what
           is required by law or operational necessity.
         </p>
@@ -2179,9 +2120,8 @@
         <p>
           High-privacy data includes sensitive or temporary information such as
           real-time location during matches, encrypted authentication
-          credentials, and payment details handled by third-party processors.
-          This data is either deleted after use, encrypted at rest, or never
-          directly accessible to Dayo in raw form.
+          credentials. This data is either deleted after use, encrypted at rest,
+          or never directly accessible to Dayo in raw form.
         </p>
 
         <h4>Medium-Privacy Data</h4>
@@ -2330,16 +2270,15 @@
           what specific purposes. Data sharing in Dayo is not arbitrary; it is
           strictly tied to how the platform operates as a sports-based social
           and matchmaking system. Because Dayo connects real users in real-world
-          games, clubs, and transactions, certain information must be shared to
-          make these interactions possible. This includes enabling players to
-          find each other, join matches, communicate in real time, and complete
-          secure payments. Without controlled and limited data sharing, core
-          features such as matchmaking, live games, messaging, and community
-          building would not function properly. However, all data sharing is
-          intentionally designed to be minimal, purpose-specific, and protected
-          by strict access rules so that only relevant users or trusted service
-          providers can access only the information needed for a specific
-          function.
+          games, and clubs, certain information must be shared to make these
+          interactions possible. This includes enabling players to find each
+          other, join matches, communicate in real time. Without controlled and
+          limited data sharing, core features such as matchmaking, live games,
+          messaging, and community building would not function properly.
+          However, all data sharing is intentionally designed to be minimal,
+          purpose-specific, and protected by strict access rules so that only
+          relevant users or trusted service providers can access only the
+          information needed for a specific function.
         </p>
 
         <!-- 8.1 -->
@@ -2656,7 +2595,6 @@
         <p>8.4.2.5 Uploaded images and media files for profiles and matches</p>
 
         <p><strong>8.4.3 Data NOT Accessed by Supabase:</strong></p>
-        <p>8.4.3.1 Payment card details and banking information</p>
         <p>8.4.3.2 External account passwords (Google/Facebook)</p>
         <p>
           8.4.3.3 Sensitive authentication credentials beyond encrypted hashes
@@ -2665,40 +2603,11 @@
         <h4>8.4.4 Google Services</h4>
 
         <p>
-          Google services are used to support authentication, payments,
-          analytics, and notifications. These integrations ensure secure login,
-          reliable payment processing, and system performance monitoring. Google
-          operates independently from Dayo’s core database and only provides
-          limited, purpose-specific data.
+          Google services are used to support authentication, analytics, and
+          notifications. These integrations ensure secure login, and system
+          performance monitoring. Google operates independently from Dayo’s core
+          database and only provides limited, purpose-specific data.
         </p>
-
-        <p>8.4.4.1 Google Sign-In provides authentication services only</p>
-        <p>
-          8.4.4.2 Google Play Billing processes all in-app payments securely
-        </p>
-        <p>8.4.4.3 Custom analytics and crash reporting tools</p>
-
-        <table border="1" cellpadding="8" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Data Shared</th>
-              <th>Data NOT Shared</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Google Sign-In</td>
-              <td>Name, email, Google ID</td>
-              <td>Password or Gmail content</td>
-            </tr>
-            <tr>
-              <td>Google Play Billing</td>
-              <td>Transaction ID, amount</td>
-              <td>Card or banking details</td>
-            </tr>
-          </tbody>
-        </table>
 
         <p>
           All third-party providers are bound by strict data processing
@@ -2717,7 +2626,7 @@
           what happens when you delete your account. Data retention is necessary
           to ensure that Dayo can operate safely, comply with legal obligations,
           maintain platform integrity, and support essential features such as
-          matches, messaging, payments, and user safety systems.
+          matches, messaging, and user safety systems.
         </p>
 
         <!-- 9.1 -->
@@ -2837,8 +2746,8 @@
         <p>
           When you request account deletion, Dayo follows a structured deletion
           process to ensure your personal data is removed securely while still
-          complying with legal obligations such as financial record-keeping and
-          abuse prevention requirements.
+          complying with legal obligations such as abuse prevention
+          requirements.
         </p>
 
         <h4>9.2.1 Immediate Deletion (Within 24 Hours)</h4>
@@ -2882,10 +2791,9 @@
 
         <h4>9.2.3 Permanent Legal Retention</h4>
         <p>
-          Certain data such as financial records and abuse reports must be
-          retained for legal and compliance reasons. These records are
-          de-identified and cannot be linked back to your personal identity
-          after deletion.
+          Certain data such as abuse reports must be retained for legal and
+          compliance reasons. These records are de-identified and cannot be
+          linked back to your personal identity after deletion.
         </p>
 
         <table>
@@ -2893,11 +2801,6 @@
             <th>Data Type</th>
             <th>Retention</th>
             <th>Reason</th>
-          </tr>
-          <tr>
-            <td>Transaction Records</td>
-            <td>7 years</td>
-            <td>Tax compliance (Philippines law)</td>
           </tr>
           <tr>
             <td>Abuse Reports</td>
@@ -2923,15 +2826,7 @@
           their copy until their own deletion request.
         </p>
 
-        <h4>9.3.2 Payment Data</h4>
-        <p>
-          Payment records are retained for at least 7 years to comply with tax
-          regulations in the Philippines. However, sensitive payment information
-          such as credit card details is never stored by Dayo and is handled
-          entirely by Google Play Billing.
-        </p>
-
-        <h4>9.3.3 Analytics & System Logs</h4>
+        <h4>9.3.2 Analytics & System Logs</h4>
         <p>
           Usage analytics and system logs are stored temporarily to improve
           performance, detect bugs, and maintain system stability. After 1 year,
@@ -2960,16 +2855,14 @@
         <p>
           Users can request complete data deletion under privacy laws. Once
           verified, all personal data is removed within 30 days, except legally
-          required records such as financial transactions or abuse prevention
-          logs.
+          required records such as abuse prevention logs.
         </p>
 
         <h4>9.4.3 Company Shutdown</h4>
         <p>
           If Dayo ceases operations, all user data will be securely deleted
-          within 30 to 60 days, except for legally required financial records.
-          Users will be notified in advance and given the option to export their
-          data before deletion.
+          within 30 to 60 days. Users will be notified in advance and given the
+          option to export their data before deletion.
         </p>
         <!-- SECTION 10 -->
         <h2 id="section-10">
@@ -2986,94 +2879,8 @@
           manage your data at any time.
         </p>
 
-        <!-- 10.1 -->
-        <h3>10.1 Right to Access Your Data</h3>
-
-        <p>
-          You have the right to request a complete copy of all personal data
-          stored by Dayo. This right exists so you can understand exactly what
-          information we hold about you, how it is used, and whether it is
-          accurate. It also ensures transparency in all processing activities
-          related to your account, including messaging, matches, payments, and
-          activity history.
-        </p>
-
-        <h4>10.1.1 What You Will Receive</h4>
-        <p>
-          When you request access, Dayo compiles all available data associated
-          with your account into a structured export. This includes identity
-          data, communication history, activity logs, and financial records
-          linked to your user ID.
-        </p>
-
-        <ul>
-          <li>Profile information (name, email, bio, sports, etc.)</li>
-          <li>All messages (sent and received)</li>
-          <li>Match history and participation records</li>
-          <li>Club memberships and roles</li>
-          <li>Payment and coin transaction history</li>
-          <li>Login and device history</li>
-          <li>Analytics and usage logs (if enabled)</li>
-          <li>Support conversations with Dayo</li>
-          <li>User reports involving your account</li>
-        </ul>
-
-        <h4>10.1.2 How to Request Data Access</h4>
-        <p>
-          To request your data, you must contact our official privacy support
-          email. This process ensures that only the rightful account owner can
-          access sensitive personal information and prevents unauthorized data
-          exposure.
-        </p>
-
-        <pre>
-Email: dayo.ph.it.services@gmail.com
-Subject: "Data Access Request"
-
-Include:
-- Full name
-- Account email
-- User ID (optional)
-- Request for full personal data export
-</pre
-        >
-
-        <h4>10.1.3 Processing Timeline</h4>
-        <p>
-          Once your request is received, we follow a structured verification and
-          delivery process to ensure security and accuracy.
-        </p>
-
-        <ul>
-          <li>1. Acknowledgment within 48 hours</li>
-          <li>2. Identity verification within 2–3 business days</li>
-          <li>3. Data compilation within 5–7 business days</li>
-          <li>4. Delivery within approximately 10 business days</li>
-        </ul>
-
-        <h4>10.1.4 Data Export Formats</h4>
-        <p>
-          Your data will be delivered in standard formats so it can be easily
-          accessed, stored, or transferred to other services if needed.
-        </p>
-
-        <ul>
-          <li>
-            <strong>JSON:</strong> Machine-readable format for developers or
-            system imports
-          </li>
-          <li>
-            <strong>CSV:</strong> Spreadsheet format compatible with Excel and
-            Google Sheets
-          </li>
-          <li>
-            <strong>PDF:</strong> Human-readable report format for printing and
-            review
-          </li>
-        </ul>
-
         <!-- 10.2 -->
-        <h3>10.2 Right to Delete Your Data</h3>
+        <h3>10.1 Right to Delete Your Data</h3>
 
         <p>
           You have the right to permanently delete your account and personal
@@ -3083,7 +2890,7 @@ Include:
           requirements.
         </p>
 
-        <h4>10.2.1 What Will Be Deleted</h4>
+        <h4>10.1.1 What Will Be Deleted</h4>
 
         <p>
           When you request deletion, most of your personal data is permanently
@@ -3104,7 +2911,7 @@ Include:
           <li>User settings and preferences</li>
         </ul>
 
-        <h4>10.2.2 What Is Retained (Legal Requirements)</h4>
+        <h4>10.1.2 What Is Retained (Legal Requirements)</h4>
 
         <p>
           Some data must be retained for legal and compliance reasons. These
@@ -3114,16 +2921,13 @@ Include:
 
         <ul>
           <li>
-            Transaction history (retained for 7 years under legal requirements)
-          </li>
-          <li>
             Abuse and moderation records (retained to prevent fraud and ban
             evasion)
           </li>
           <li>Legal dispute documentation (if applicable)</li>
         </ul>
 
-        <h4>10.2.3 How to Delete Your Account</h4>
+        <h4>10.1.3 How to Delete Your Account</h4>
 
         <p>
           Account deletion can be initiated directly through the app or via
@@ -3152,7 +2956,7 @@ In-App Steps:
         </p>
 
         <!-- 10.3 -->
-        <h3>10.3 Right to Correct Your Data</h3>
+        <h3>10.2 Right to Correct Your Data</h3>
 
         <p>
           You have the right to update or correct any inaccurate or outdated
@@ -3161,21 +2965,14 @@ In-App Steps:
           within the platform.
         </p>
 
-        <h4>10.3.1 Profile Corrections</h4>
+        <h4>10.2.1 Profile Corrections</h4>
         <p>
           You can directly edit most profile information inside the app. This
           includes your name, bio, sports preferences, and profile photo.
           Changes are applied immediately and reflected across the platform.
         </p>
 
-        <h4>10.3.2 Email and Password Updates</h4>
-        <p>
-          Email and password changes require verification to ensure account
-          security. This prevents unauthorized changes and protects your
-          identity from misuse or takeover attempts.
-        </p>
-
-        <h4>10.3.3 Correction Requests via Email</h4>
+        <h4>10.2.2 Correction Requests via Email</h4>
         <pre>
 Email: dayo.ph.it.services@gmail.com
 Subject: "Data Correction Request"
@@ -3194,7 +2991,7 @@ Include:
         </p>
 
         <!-- 10.4 -->
-        <h3>10.4 Right to Opt-Out of Non-Essential Processing</h3>
+        <h3>10.3 Right to Opt-Out of Non-Essential Processing</h3>
 
         <p>
           You may opt out of optional data processing activities that are not
@@ -3202,112 +2999,25 @@ Include:
           use Dayo while limiting data collection based on your preferences.
         </p>
 
-        <h4>10.4.1 Analytics Opt-Out</h4>
+        <h4>10.3.1 Analytics Opt-Out</h4>
         <p>
           Analytics helps us improve app performance, but it is optional. When
           disabled, we stop tracking detailed user behavior while still
           collecting essential system-level error data for stability.
         </p>
 
-        <h4>10.4.2 Personalization Opt-Out</h4>
+        <h4>10.3.2 Personalization Opt-Out</h4>
         <p>
           You can disable personalized recommendations to receive a neutral
           experience instead of algorithm-based suggestions. This does not
           affect your ability to join matches or use core features.
         </p>
 
-        <h4>10.4.3 Permission Controls</h4>
+        <h4>10.3.3 Permission Controls</h4>
         <p>
           You can also disable system permissions such as location, camera, or
           notifications. Some features like match discovery or real-time
           tracking may stop working if permissions are disabled.
-        </p>
-
-        <!-- 10.5 -->
-        <h3>10.5 Right to Data Portability</h3>
-
-        <p>
-          You have the right to request your data in a structured format so you
-          can reuse it or transfer it to another platform. This ensures your
-          data is not locked into Dayo and remains under your control.
-        </p>
-
-        <h4>10.5.1 Exportable Data</h4>
-        <ul>
-          <li>Profile and identity data</li>
-          <li>Match history and statistics</li>
-          <li>Messages and conversations</li>
-          <li>Club memberships</li>
-          <li>Uploaded photos and files</li>
-        </ul>
-
-        <h4>10.5.2 Export Formats</h4>
-        <ul>
-          <li>JSON (for developers and system migration)</li>
-          <li>CSV (for spreadsheets and analysis)</li>
-          <li>PDF (for readable documentation)</li>
-        </ul>
-
-        <!-- 10.6 -->
-        <h3>10.6 Right to Lodge a Complaint</h3>
-
-        <p>
-          If you believe your privacy rights have been violated, you may file a
-          complaint either directly with Dayo or with government authorities.
-          This ensures accountability and provides a formal process for
-          resolving privacy-related concerns.
-        </p>
-
-        <h4>10.6.1 Internal Complaint Process</h4>
-        <p>
-          You can contact Dayo directly for investigation and resolution. All
-          complaints are reviewed and responded to within 30 days.
-        </p>
-
-        <pre>
-Email: dayo.ph.it.services@gmail.com
-Subject: "Privacy Complaint"
-</pre
-        >
-
-        <h4>10.6.2 Government Authorities</h4>
-        <p>
-          You may escalate concerns to regulatory bodies such as the National
-          Privacy Commission of the Philippines for independent review and
-          enforcement action if necessary.
-        </p>
-
-        <!-- 10.7 -->
-        <h3>10.7 Right Against Automated Decision-Making</h3>
-
-        <p>
-          You have the right to understand and challenge automated decisions
-          made about your account. While Dayo uses automation for efficiency,
-          all critical decisions affecting your account are subject to human
-          oversight and review.
-        </p>
-
-        <h4>10.7.1 Automated Systems in Dayo</h4>
-
-        <ul>
-          <li>Match recommendations based on preferences</li>
-          <li>Fraud detection and security alerts</li>
-          <li>Content moderation flagging system</li>
-          <li>Account risk scoring systems</li>
-        </ul>
-
-        <h4>10.7.2 Human Oversight</h4>
-        <p>
-          Even when automation is used, final decisions that affect account
-          status (such as bans or suspensions) are reviewed by human moderators.
-          This ensures fairness, context awareness, and the ability to appeal
-          any decision.
-        </p>
-
-        <h4>10.7.3 Your Control</h4>
-        <p>
-          You can disable recommendations, request explanations, or appeal any
-          automated decision through the app settings or support channels.
         </p>
 
         <!-- SECTION 11 -->
@@ -3904,169 +3614,9 @@ Steps:
           <li>Analytics opt-out controls</li>
           <li>Privacy settings customization</li>
         </ul>
-
-        <h4>13.2.4 Planned Child Safety Improvements</h4>
-
-        <p>
-          Dayo is continuously improving its safety infrastructure. Future
-          updates will introduce stronger verification systems and enhanced
-          protections for younger users. These features are designed to further
-          improve trust, safety, and compliance with evolving child protection
-          regulations.
-        </p>
-
-        <ul>
-          <li>Parental control system integration (planned)</li>
-          <li>Enhanced age verification methods (ID-based)</li>
-          <li>Parental consent workflows for minors under 18</li>
-          <li>AI-assisted safety monitoring for conversations</li>
-          <li>Age-appropriate match and content filtering</li>
-          <li>Restricted feature modes for younger users</li>
-        </ul>
-        <!-- SECTION 14 -->
-        <h2 id="section-14">
-          <span class="section-num">14</span>14. Minors (13–17) & Parental
-          Controls (Planned Feature)
-        </h2>
-
-        <p>
-          This section describes Dayo’s planned parental control system designed
-          for users aged 13 to 17. These features are intended to give parents
-          or guardians greater visibility and safety controls over their child’s
-          activity within the app while still respecting the child’s privacy and
-          independence. At the time of this policy, these features are still
-          under development and are not yet available to users.
-        </p>
-
-        <!-- 14.1 -->
-        <h3>14.1 Planned Parental Control Features</h3>
-
-        <p>
-          The parental control system is currently in development and is
-          designed to provide optional oversight tools for parents or guardians.
-          The goal is to improve child safety in sports coordination, messaging,
-          and location-based match participation while maintaining a balanced
-          level of privacy for teenage users.
-        </p>
-
-        <p>
-          These features are not active yet and will be introduced in future
-          updates once development, testing, and compliance reviews are
-          completed.
-        </p>
-
-        <!-- 14.2 -->
-        <h3>14.2 Planned Implementation (Timeline TBD)</h3>
-
-        <p>
-          When fully implemented, the parental control system will allow parents
-          to connect their account to their child’s account and monitor certain
-          types of activity. This system is designed to support transparency and
-          safety without giving full access to private communications or
-          sensitive personal data.
-        </p>
-
-        <h4>14.2.1 What Parents Will Be Able to Do (Planned)</h4>
-
-        <p>
-          The parental dashboard will provide limited but meaningful visibility
-          into activity related to matches, clubs, and general usage patterns.
-          This is intended to help parents stay informed about their child’s
-          participation in real-world sports activities without exposing private
-          conversations.
-        </p>
-
-        <ul>
-          <li>Parent account creation and dashboard access</li>
-          <li>Link child account via verified email connection</li>
-          <li>View child profile information (basic details)</li>
-          <li>View match participation history</li>
-          <li>Receive notifications when child joins a match</li>
-          <li>View clubs the child is a member of</li>
-          <li>Control analytics opt-in/opt-out settings</li>
-          <li>Set location sharing limitations (match-only basis)</li>
-          <li>Configure quiet hours for notifications</li>
-          <li>Require approval before joining selected matches</li>
-        </ul>
-
-        <h4>14.2.2 What Parents Will NOT Be Able to Do</h4>
-
-        <p>
-          To protect privacy and ensure healthy independence for teenage users,
-          certain sensitive features will remain inaccessible to parents. These
-          restrictions are designed to prevent over-monitoring while still
-          allowing safety oversight for public and activity-based data.
-        </p>
-
-        <ul>
-          <li>No access to private messages or conversations</li>
-          <li>No ability to block or restrict all app usage entirely</li>
-          <li>No ability to delete or permanently remove child account</li>
-          <li>No access to or modification of child passwords</li>
-          <li>No access to payment or coin transaction history</li>
-          <li>No real-time location tracking outside of matches</li>
-        </ul>
-
-        <h4>14.2.3 Planned Verification Process</h4>
-
-        <p>
-          When parental controls are launched, a verification system will be
-          introduced to ensure that only legitimate parents or guardians can
-          link to a child’s account. This process is designed to prevent
-          unauthorized access and protect minors from account misuse.
-        </p>
-
-        <pre>
-Planned Flow:
-
-1. Child creates Dayo account (age 13–17)
-2. Parent initiates linking request via email
-3. Child receives notification of linking request
-4. Parent verifies identity through email confirmation
-5. Relationship is confirmed and linked
-6. Parent dashboard becomes active
-7. Child is notified of parental linkage
-</pre
-        >
-
-        <h4>14.2.4 Planned Development Timeline</h4>
-
-        <p>
-          The parental control system is being developed in phases to ensure
-          proper security, usability, and legal compliance. The timeline below
-          reflects current planning status and may change based on development
-          progress and regulatory review.
-        </p>
-
-        <ul>
-          <li>Research Phase: Completed</li>
-          <li>Development Phase: In Progress</li>
-          <li>Beta Testing Phase: Planned for Q3 2026</li>
-          <li>Full Public Release: Expected Q4 2026</li>
-        </ul>
-
-        <!-- 14.3 -->
-        <h3>14.3 Current Safety Approach for Parents</h3>
-
-        <p>
-          Until parental control features are officially released,
-          responsibility for managing a minor’s app usage remains at the device
-          level. Parents and guardians are encouraged to use built-in device
-          tools and communication with their child to monitor activity. Dayo
-          also provides privacy and permission controls that can be adjusted
-          directly on the device.
-        </p>
-
-        <ul>
-          <li>Use iOS Screen Time or Android Digital Wellbeing tools</li>
-          <li>Review app permissions (location, notifications, camera)</li>
-          <li>Discuss app usage and activity with your child</li>
-          <li>Adjust privacy settings within the Dayo app</li>
-          <li>Disable location sharing at device level if needed</li>
-        </ul>
         <!-- SECTION 15 -->
-        <h2 id="section-15">
-          <span class="section-num">15</span>15. Security Measures & Data
+        <h2 id="section-14">
+          <span class="section-num">14</span>14. Security Measures & Data
           Protection (Implemented)
         </h2>
 
@@ -4079,8 +3629,8 @@ Planned Flow:
           preventing unauthorized access, data leaks, and cyberattacks.
         </p>
 
-        <!-- 15.1 -->
-        <h3>15.1 Encryption</h3>
+        <!-- 14.1 -->
+        <h3>14.1 Encryption</h3>
 
         <p>
           All data handled by Dayo is protected using industry-standard
@@ -4091,57 +3641,22 @@ Planned Flow:
           attacks, and complying with modern privacy and security standards.
         </p>
 
-        <h4>15.1.1 In Transit (HTTPS/TLS)</h4>
+        <h4>14.1.1 In Transit (HTTPS/TLS)</h4>
         <p>
           Data sent between your device and Dayo servers is encrypted using
           secure transport protocols. This prevents attackers from intercepting
           or reading sensitive information while it is being transmitted across
           networks.
         </p>
-
-        <ul>
-          <li>All communication uses HTTPS with TLS 1.2 or higher</li>
-          <li>SSL certificates issued by DigiCert for domain verification</li>
-          <li>HTTP Strict Transport Security (HSTS) enabled</li>
-          <li>Prevents man-in-the-middle (MITM) attacks</li>
-          <li>Prevents packet sniffing or interception</li>
-        </ul>
-
-        <h4>15.1.2 At Rest (Database Encryption)</h4>
+        <h4>14.1.2 At Rest (Database Encryption)</h4>
         <p>
           All stored data in Dayo’s backend systems is encrypted using strong
           encryption standards. This ensures that even if unauthorized access to
           storage occurs, the data remains unreadable without proper decryption
           keys.
         </p>
-
-        <ul>
-          <li>AES-256 encryption applied to all databases</li>
-          <li>Encryption keys stored separately from data</li>
-          <li>Managed automatically by Supabase infrastructure</li>
-          <li>Data cannot be read without valid encryption keys</li>
-        </ul>
-
-        <h4>15.1.3 Password Security</h4>
-        <p>
-          User passwords are never stored in plain text. Instead, they are
-          transformed into irreversible encrypted hashes using secure
-          cryptographic algorithms. This ensures that even in the unlikely event
-          of a database breach, passwords remain protected.
-        </p>
-
-        <ul>
-          <li>Passwords hashed using bcrypt algorithm</li>
-          <li>12-round salt applied for additional security</li>
-          <li>One-way encryption (cannot be reversed)</li>
-          <li>
-            Password reset uses secure email links (not password retrieval)
-          </li>
-          <li>Each password generates a unique hash</li>
-        </ul>
-
-        <!-- 15.2 -->
-        <h3>15.2 Access Controls</h3>
+        <!-- 14.2 -->
+        <h3>14.2 Access Controls</h3>
 
         <p>
           Access to user data within Dayo is strictly controlled to prevent
@@ -4150,27 +3665,14 @@ Planned Flow:
           These controls ensure accountability, traceability, and compliance
           with privacy standards.
         </p>
-
-        <ul>
-          <li>Only authorized Dayo staff can access production data</li>
-          <li>Multi-factor authentication (MFA) required for staff login</li>
-          <li>Email/password plus 6-digit verification code</li>
-          <li>All access activities are logged and audited</li>
-          <li>Quarterly security audits of access logs</li>
-          <li>Staff trained in privacy and data protection policies</li>
-          <li>Confidentiality agreements signed by all employees</li>
-          <li>Least privilege access model enforced</li>
-        </ul>
-
         <p>
           The principle of least privilege ensures that employees only access
           the minimum amount of data required to perform their specific job
           functions. This significantly reduces the risk of internal misuse and
           limits exposure in case of compromised accounts.
         </p>
-
-        <!-- 15.3 -->
-        <h3>15.3 Infrastructure Security</h3>
+        <!-- 14.3 -->
+        <h3>14.3 Infrastructure Security</h3>
 
         <p>
           Dayo operates on secure cloud infrastructure designed to resist
@@ -4179,21 +3681,8 @@ Planned Flow:
           threats such as hacking attempts, service disruptions, and malicious
           traffic.
         </p>
-
-        <ul>
-          <li>Firewall protection for all inbound and outbound traffic</li>
-          <li>DDoS protection and automated rate limiting</li>
-          <li>Intrusion detection systems (IDS) monitoring traffic</li>
-          <li>Monthly vulnerability scans and security audits</li>
-          <li>Annual third-party penetration testing</li>
-          <li>Immediate application of critical security patches</li>
-          <li>Daily encrypted backups stored redundantly</li>
-          <li>Disaster recovery plan tested annually</li>
-          <li>Separate production, staging, and development environments</li>
-        </ul>
-
-        <!-- 15.4 -->
-        <h3>15.4 API Security</h3>
+        <!-- 14.4 -->
+        <h3>14.4 API Security</h3>
 
         <p>
           All Dayo application programming interfaces (APIs) are protected with
@@ -4202,19 +3691,6 @@ Planned Flow:
           valid, authenticated users and systems can interact with Dayo
           services.
         </p>
-
-        <ul>
-          <li>Secure API key authentication required for all requests</li>
-          <li>Quarterly API key rotation for added security</li>
-          <li>Strict rate limiting to prevent brute-force attacks</li>
-          <li>Input validation on all user-submitted data</li>
-          <li>Protection against SQL injection attacks</li>
-          <li>Protection against cross-site scripting (XSS)</li>
-          <li>Protection against cross-site request forgery (CSRF)</li>
-          <li>Authentication required for all endpoints</li>
-          <li>Authorization checks enforced per request</li>
-        </ul>
-
         <p>
           These API protections are essential for ensuring that the Dayo
           platform remains secure, stable, and resistant to common web-based
@@ -4222,189 +3698,21 @@ Planned Flow:
           authorized users and approved system processes.
         </p>
         <!-- SECTION 16 -->
-        <h2 id="section-16">
-          <span class="section-num">16</span>16. Contact & Support
+        <h2 id="#bottom">
+          <span class="section-num">15</span>15. Contact & Support
         </h2>
 
         <p>
-          This section explains how you can contact Dayo for privacy-related
-          concerns, data requests, and support inquiries. It also outlines
-          expected response times, request handling procedures, and escalation
-          paths. These processes ensure that all users have a clear and reliable
-          way to exercise their rights and receive assistance regarding their
-          personal data and account-related issues.
+          If you have any questions, concerns, or requests regarding your
+          privacy, personal data, or account-related issues, you may contact
+          Dayo directly through our official support email at
+          <strong>dayo.ph.it.services@gmail.com</strong>. Our team is committed
+          to providing timely assistance and ensuring that all inquiries are
+          handled professionally and securely. Whether you need help with
+          account access, data requests, reporting issues, or general support
+          concerns, we aim to respond as quickly as possible and provide clear
+          communication throughout the resolution process.
         </p>
-
-        <!-- 16.1 -->
-        <h3>16.1 Privacy Inquiries</h3>
-
-        <p>
-          Dayo provides a single official communication channel for all
-          privacy-related matters. This centralized approach ensures that all
-          requests are properly tracked, securely handled, and responded to
-          within defined timelines. It also prevents confusion from multiple
-          contact points and ensures consistent handling of sensitive data
-          requests.
-        </p>
-
-        <h4>16.1.1 Official Contact Information</h4>
-        <pre>
-Primary Email: dayo.ph.it.services@gmail.com
-Mailing Address: Butuan City, Agusan Del Norte, Philippines
-Response Time: 10 business days (standard)
-No other contact methods available
-</pre
-        >
-
-        <h4>16.1.2 Required Information for Requests</h4>
-        <p>
-          To properly process your request, you should include sufficient
-          information to verify your identity and locate your account. This
-          helps ensure that sensitive data is only disclosed to the rightful
-          account owner.
-        </p>
-
-        <ul>
-          <li>Full name associated with your account</li>
-          <li>Registered account email address</li>
-          <li>User ID (if available)</li>
-          <li>Clear description of your request</li>
-          <li>Relevant dates or context</li>
-          <li>Supporting documents (if applicable)</li>
-        </ul>
-
-        <h4>16.1.3 Types of Supported Requests</h4>
-        <p>
-          The support channel is specifically designed to handle privacy, data
-          protection, and account-related legal rights requests. This ensures
-          compliance with data protection regulations and provides structured
-          handling of user rights.
-        </p>
-
-        <ul>
-          <li>Privacy-related inquiries</li>
-          <li>Data access requests</li>
-          <li>Account deletion requests</li>
-          <li>Data correction requests</li>
-          <li>Data portability requests</li>
-          <li>Privacy complaints</li>
-          <li>Security concerns</li>
-          <li>General data protection questions</li>
-        </ul>
-
-        <!-- 16.2 -->
-        <h3>16.2 Data Subject Rights Requests</h3>
-
-        <p>
-          All user data rights requests are processed within specific timelines
-          depending on the type of request. These timelines ensure compliance
-          with applicable privacy laws while maintaining secure and accurate
-          handling of personal data.
-        </p>
-
-        <h4>16.2.1 Standard Response Times</h4>
-
-        <ul>
-          <li>Access requests: 10 business days</li>
-          <li>Immediate deletion requests: 24–48 hours</li>
-          <li>Full backup deletion: up to 30 days</li>
-          <li>Data portability requests: 10 business days</li>
-          <li>Data correction requests: 1 business day</li>
-          <li>Privacy complaints: up to 30 days</li>
-        </ul>
-
-        <h4>16.2.2 Request Tracking System</h4>
-        <p>
-          Each request submitted to Dayo is assigned a unique reference number.
-          This reference system ensures proper tracking, accountability, and
-          transparency throughout the request lifecycle.
-        </p>
-
-        <ul>
-          <li>Each request generates a unique reference ID</li>
-          <li>Reference ID must be used for all follow-ups</li>
-          <li>Status updates are sent via email</li>
-          <li>Reference numbers remain valid for 90 days</li>
-        </ul>
-
-        <h4>16.2.3 Coin and Payment Refund Requests</h4>
-        <p>
-          Refund requests related to coin purchases or payments are handled
-          through a structured review process. This ensures fairness, prevents
-          abuse, and complies with payment processor policies.
-        </p>
-
-        <pre>
-Email: dayo.ph.it.services@gmail.com
-Subject: "Coin Refund Request"
-
-Include:
-- Account email
-- Transaction ID (if available)
-- Reason for refund
-- Amount requested (₱ or coins)
-
-Example:
-"I accidentally purchased 1000 coins worth ₱500.
-Transaction ID: GPA.1-2345-6789.
-Please process a refund."
-</pre
-        >
-
-        <ul>
-          <li>Review period: 2–3 business days</li>
-          <li>If approved: Refund processed within 3–5 business days</li>
-          <li>If denied: Full explanation provided</li>
-          <li>Users may appeal the decision</li>
-        </ul>
-
-        <!-- 16.3 -->
-        <h3>16.3 Escalation Process</h3>
-
-        <p>
-          If you are not satisfied with the initial response to your request,
-          Dayo provides a structured escalation process. This ensures that
-          concerns can be reviewed at higher levels of authority and, if
-          necessary, escalated to external regulatory bodies.
-        </p>
-
-        <h4>16.3.1 Step 1: Request Clarification</h4>
-
-        <p>
-          You may first request clarification if you believe the initial
-          response does not fully address your concern. This allows for further
-          explanation or correction of misunderstandings.
-        </p>
-
-        <pre>
-Email: dayo.ph.it.services@gmail.com
-Subject: "Follow-up: [Reference Number]"
-</pre
-        >
-
-        <p>Response time: 5 business days</p>
-
-        <h4>16.3.2 Step 2: Manager Escalation</h4>
-
-        <p>
-          If you remain unsatisfied, you may escalate the issue for managerial
-          review. This ensures a higher-level assessment of your request and
-          response.
-        </p>
-
-        <pre>
-Email: dayo.ph.it.services@gmail.com
-Subject: "Escalation Request: [Reference Number]"
-
-Include:
-- Original request
-- Previous response
-- Reason for disagreement
-- Desired resolution
-</pre
-        >
-
-        <p>Response time: 10 business days</p>
       </main>
     </div>
 
